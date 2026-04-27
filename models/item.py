@@ -12,7 +12,7 @@ class Item:
     category: Optional[Category] = field(default_factory=lambda: Category.DEFAULT)
     
     def get_category_name(self) -> str:
-        return self.category.value if self.category else Category.DEFAULT
+        return self.category.value if self.category else Category.DEFAULT.value
     
 
 
